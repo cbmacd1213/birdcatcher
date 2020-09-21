@@ -40,7 +40,7 @@ def assoc_toy(request, bird_id, toy_id):
 
 class BirdCreate(CreateView):
     model = Bird
-    fields = '__all__'
+    fields = ['name', 'breed', 'description', 'age']
     success_url = '/birds/'
 
 class BirdUpdate(UpdateView):
